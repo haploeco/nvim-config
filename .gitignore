@@ -40,5 +40,6 @@ luac.out
 *.hex
 
 # nvim plugins
-autoload/
+autoload/plugged
+autoload/plug.vim
 
