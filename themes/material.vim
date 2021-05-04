@@ -8,7 +8,7 @@ endif
 
 " Set the colorscheme and theme
   let g:material_terminal_italics = 1
-  let g:material_theme_style = 'ocean'
+  let g:material_theme_style = 'palenight'
   colorscheme material
   let g:airline_theme = 'material'
 
