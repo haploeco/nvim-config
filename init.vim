@@ -28,7 +28,7 @@ source $HOME/.config/nvim/themes/material.vim
   map <leader>s :!clear && shellcheck %<CR>
 
 " Replace all is aliased to S.
-  nnoremap S :%s//g<Left><Left>
+"  nnoremap S :%s//g<Left><Left>
 
 " Vimwiki and Taskwiki
   let g:vimwiki_list = [{'path':'~/projects/vimwiki', 'syntax': 'markdown', 'ext': '.md'}]
@@ -63,11 +63,4 @@ source $HOME/.config/nvim/themes/material.vim
   autocmd BufWritePost *sxhkdrc !pkill -USR1 sxhkd
 
 " Run xrdb whenever Xdefaults or Xresources are updated.
-  autocmd BufWritePost *Xresources,*Xdefaults !xrdb -merge %
-
-" Navigating with guides
-" I need to experiment to see how I can benefit from this
-  inoremap <leader><leader> <Esc>/<++><Enter>"_c4l
-  vnoremap <leader><leader> <Esc>/<++><Enter>"_c4l
-  map <leader><leader> <Esc>/<++><Enter>"_c4l
-
+  autocmd BufWritePost *Xresources,Xresources*,*Xdefaults,*xresources !xrdb -merge %
